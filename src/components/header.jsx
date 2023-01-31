@@ -1,8 +1,8 @@
 
 const Header = () =>{
     return(
-        <div>
-            <h2>Calendar APP</h2>
+        <div className="headerWrapper">
+            <p>🗓️ Calendar APP</p>
         </div>
     )
 }

@@ -7,6 +7,14 @@ body {
 
 /* HEADER */
 
+.headerWrapper{
+  color: whitesmoke;
+  opacity: 0.9;
+  font-size: 1.9em;
+  border-bottom: 3px solid #5074de;
+  text-align: center;
+  height: 70px;
+}
 
 
 
@@ -14,8 +22,9 @@ body {
 
 .mainWrapper {
   min-width: 300px;
-  min-height: 80vh;
+  min-height: 70vh;
   margin: 0 auto;
+  margin-bottom: 90px;
   display: grid;
   place-content: center;
   max-width: 1280px;
@@ -37,6 +46,7 @@ body {
   height: 90px;
   display: grid;
   place-content: center;
+  color: black;
 }
 
 .leftArrow, .rightArrow { 
@@ -97,12 +107,13 @@ button:hover{
 /*  footer   */
 
 .mainFooterWrapper{
+
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 20em;
+  width: 19em;
   place-content: center;
   transition: 2s;
-  color: rgb(219, 230, 230);
+  color: rgb(210, 205, 205);
 }
 
 .phrase{
@@ -116,14 +127,16 @@ button:hover{
 }
 
 .footerWrapper{
-  background-color: rgb(250, 136, 95);
-  width: 6em;
-  height: 6em;
+  background-color: #4b96eb;
+  width: 5em;
+  height: 5em;
   display: grid;
   place-content: center;
   border-radius: 15px;
-  box-shadow: 0 0 20px 3px rgba(5, 5, 5, 0.571);
- 
+  box-shadow: 0 0 10px 3px rgba(5, 5, 5, 0.571);
+  background-image: url("./assets/github-mark.png");
+  background-size: cover;
+  
 }
 
 .mainFooterWrapper:hover{ 
@@ -131,5 +144,5 @@ button:hover{
 }
 
 .mainFooterWrapper:hover .phrase{
-  opacity: 0.9;
+  opacity: 1
 }
