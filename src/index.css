@@ -3,6 +3,15 @@ body {
   background: #1e4bd1;
 }
 
+
+
+/* HEADER */
+
+
+
+
+/* CALENDAR */
+
 .mainWrapper {
   min-width: 300px;
   min-height: 80vh;
@@ -71,7 +80,7 @@ button:hover{
 
 .days-item:hover{
   background-color:rgb(250, 136, 95);
-  box-shadow: 0 0 7px 3px rgba(232, 135, 8, 0.509);
+  box-shadow: 0 0 5px 3px rgb(248, 107, 85);
 }
 
 .days {
@@ -85,16 +94,42 @@ button:hover{
   box-shadow: 0 0 7px 3px rgba(5, 5, 5, 0.349);
 }
 
-
 /*  footer   */
 
+.mainFooterWrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 20em;
+  place-content: center;
+  transition: 2s;
+  color: rgb(219, 230, 230);
+}
+
+.phrase{
+  text-align: center;
+  width: 11em;
+  display: grid;
+  place-content: center;
+  font-size: 1.3em;
+  opacity: 0;
+  transition: 2s;
+}
+
 .footerWrapper{
-  background-color: red;
+  background-color: rgb(250, 136, 95);
   width: 6em;
   height: 6em;
   display: grid;
   place-content: center;
   border-radius: 15px;
-  
-  box-shadow: 0 0 7px 3px rgba(5, 5, 5, 0.571);
+  box-shadow: 0 0 20px 3px rgba(5, 5, 5, 0.571);
+ 
+}
+
+.mainFooterWrapper:hover{ 
+  transform: translate(0, -20px);
+}
+
+.mainFooterWrapper:hover .phrase{
+  opacity: 0.9;
 }
