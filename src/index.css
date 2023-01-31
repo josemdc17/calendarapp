@@ -1,0 +1,85 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  
+  background: #204ccf;
+}
+
+.mainWrapper {
+  min-width: 300px;
+  min-height: 60vh;
+}
+
+.monthName {
+  border-radius: 35px;
+
+  background-color: rgb(250, 136, 95);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 10px;
+  width: 49.8em;
+} 
+
+.title{
+  margin: 0;
+  font-size: 2.7em;
+  height: 90px;
+  display: grid;
+  place-content: center;
+}
+
+.leftArrow, .rightArrow { 
+  display: grid;
+  place-content: center;
+  height: 90px;
+}
+
+button{
+  font-size: 3em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  scale: 1.3;
+  
+}
+
+.days-head{
+  width: 6.4em;
+  height: 2em;
+  display: grid;
+  place-content: center;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.days-item{
+  width: 6.4em;
+  height: 2em;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.days-item:hover{
+  background-color:rgb(250, 136, 95);
+}
+
+.days {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  background-color: whitesmoke;
+  gap: 5px;
+  border-radius: 35px;
+  padding: 25px;
+  min-height: 40vh;
+}
