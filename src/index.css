@@ -1,27 +1,25 @@
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  
-  background: #204ccf;
+  background: #1e4bd1;
 }
 
 .mainWrapper {
   min-width: 300px;
-  min-height: 60vh;
+  min-height: 80vh;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  max-width: 1280px;
 }
 
 .monthName {
-  border-radius: 35px;
-
+  border-radius: 25px;
   background-color: rgb(250, 136, 95);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 10px;
   width: 49.8em;
+  box-shadow: 0 0 7px 3px rgba(5, 5, 5, 0.38);
 } 
 
 .title{
@@ -59,6 +57,7 @@ button:hover{
   font-weight: bold;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
+  
 }
 
 .days-item{
@@ -72,6 +71,7 @@ button:hover{
 
 .days-item:hover{
   background-color:rgb(250, 136, 95);
+  box-shadow: 0 0 7px 3px rgba(232, 135, 8, 0.509);
 }
 
 .days {
@@ -79,7 +79,22 @@ button:hover{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   background-color: whitesmoke;
   gap: 5px;
-  border-radius: 35px;
+  border-radius: 25px;
   padding: 25px;
   min-height: 40vh;
+  box-shadow: 0 0 7px 3px rgba(5, 5, 5, 0.349);
+}
+
+
+/*  footer   */
+
+.footerWrapper{
+  background-color: red;
+  width: 6em;
+  height: 6em;
+  display: grid;
+  place-content: center;
+  border-radius: 15px;
+  
+  box-shadow: 0 0 7px 3px rgba(5, 5, 5, 0.571);
 }

@@ -50,7 +50,7 @@ const Calendar = () => {
   }
 
   return (
-    <div className="mainWrapper">
+    <div className="">
 
       <div className="monthName">
         <div className="leftArrow">
