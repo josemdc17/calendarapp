@@ -8,7 +8,7 @@ body {
 .headerWrapper {
   border-bottom: 3px solid #5074de;
   color: whitesmoke;
-  font-size: 1.7em;
+  font-size: 2.4em;
   height: 60px;
   opacity: 0.9;
   text-align: center;
@@ -98,7 +98,7 @@ button:hover {
 }
 
 #presentDay{
-  background-color: rgb(18, 123, 229);
+  background-color: rgb(28, 121, 215);
   font-weight: bold;
   color:whitesmoke;
 }
@@ -125,7 +125,8 @@ button:hover {
 }
 
 .footerWrapper {
-  background-color: #4b96eb;
+  cursor: pointer;
+  background-color: #2b70c0;
   background-image: url("./assets/github-mark.png");
   background-size: cover;
   border-radius: 15px;

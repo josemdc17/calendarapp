@@ -2,7 +2,7 @@
 const Header = () =>{
     return(
         <div className="headerWrapper">
-            🗓️Calendar
+            🗓️ Calendar
         </div>
     )
 }
