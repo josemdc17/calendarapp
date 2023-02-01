@@ -65,13 +65,13 @@ const Calendar = () => {
       </div>
 
       <div className="days">
-        <div className="days-head">Sunday</div>
-        <div className="days-head">Monday</div>
-        <div className="days-head">Tuesday</div>
-        <div className="days-head">Wednesday</div>
-        <div className="days-head">Thursday</div>
-        <div className="days-head">Friday</div>
-        <div className="days-head">Saturday</div>
+        <div className="days-head">Sun</div>
+        <div className="days-head">Mon</div>
+        <div className="days-head">Tue</div>
+        <div className="days-head">Wed</div>
+        <div className="days-head">Thu</div>
+        <div className="days-head">Fri</div>  
+        <div className="days-head">Sat</div>
         {listDays}
       </div>
     </div>

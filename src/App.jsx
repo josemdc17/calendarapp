@@ -6,12 +6,15 @@ import Footer from "./components/footer";
 function App() {
   return (
     <div className="App">
+
       <Header />
+
       <div className="mainWrapper">
         <Calendar />
       </div>
 
       <Footer />
+      
     </div>
   );
 }
