@@ -150,8 +150,8 @@ button:hover {
     height: 50px;
   }
 
-  .mainWrapper div {
-    max-width: 350px;
+  .calendarWrapper {
+    width: 350px;
   }
 
   .days-item {

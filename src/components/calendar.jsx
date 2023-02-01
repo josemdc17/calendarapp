@@ -18,6 +18,7 @@ const Calendar = () => {
 
   let date = new Date();
   let month = date.getMonth();
+  let day = date.getDate();
 
   const [value, setValue] = useState(month)
 
@@ -43,6 +44,9 @@ const Calendar = () => {
   for (let i = 0; i < (days + totalOfEmptyDays); i++) {
     if (i < totalOfEmptyDays) {
       listDays.push(<div key={i}></div>);
+    }if(i === day){
+      listDays.push(<div className="days-item" id="presentDay" key={i}>{j + 1}</div>);
+      j++;
     } else {
       listDays.push(<div className="days-item" key={i}>{j + 1}</div>);
       j++;
@@ -50,7 +54,7 @@ const Calendar = () => {
   }
 
   return (
-    <div className="">
+    <div className="calendarWrapper">
 
       <div className="monthName">
         <div className="leftArrow">
