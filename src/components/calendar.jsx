@@ -44,7 +44,7 @@ const Calendar = () => {
   for (let i = 0; i < (days + totalOfEmptyDays); i++) {
     if (i < totalOfEmptyDays) {
       listDays.push(<div key={i}></div>);
-    }if(i === day){
+    }else if(i === day){
       listDays.push(<div className="days-item" id="presentDay" key={i}>{j + 1}</div>);
       j++;
     } else {
