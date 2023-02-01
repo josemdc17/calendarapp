@@ -97,6 +97,10 @@ button:hover {
   padding: 25px;
 }
 
+#presentDay{
+  background-color: red;
+}
+
 /*  footer   */
 
 .mainFooterWrapper {
