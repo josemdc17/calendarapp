@@ -13,7 +13,7 @@ body {
   opacity: 0.9;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   display: grid;
   place-content: center;
 }
@@ -110,31 +110,31 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-content: center;
-  transition: 2s;
-  width: 19em;
+  transition: 1s;
+  width: 11em;
 }
 
 .phrase {
   display: grid;
-  font-size: 1.3em;
+  font-size: 0.8em;
   opacity: 0;
   place-content: center;
-  text-align: center;
-  transition: 2s;
-  width: 11em;
+  text-align: left;
+  transition: 1s;
+  width: 10em;
 }
 
 .footerWrapper {
   cursor: pointer;
-  background-color: #2b70c0;
+  background-color: #e8e9eb;
   background-image: url("./assets/github-mark.png");
   background-size: cover;
   border-radius: 15px;
   box-shadow: 0 0 10px 3px rgba(5, 5, 5, 0.571);
   display: grid;
-  height: 5em;
+  height: 3em;
   place-content: center;
-  width: 5em;
+  width: 3em;
 }
 
 .mainFooterWrapper:hover {

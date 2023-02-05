@@ -1,6 +1,16 @@
 import { useState } from "react";
 
 const Calendar = () => {
+
+  let date = new Date();
+
+  let month = date.getMonth();
+  
+  
+
+  const [value, setValue] = useState(month)
+
+
   const monthDays = {
     0: { days: 31, name: "January", firstDay: 0 },
     1: { days: 28, name: "February", firstDay: 3 },
@@ -16,12 +26,6 @@ const Calendar = () => {
     11: { days: 31, name: "December", firstDay: 5 },
   };
 
-  let date = new Date();
-  let month = date.getMonth();
-  let day = date.getDate();
-
-  const [value, setValue] = useState(month)
-
   const moveBackward = () => {
     if(value !== 0){
       setValue(value - 1)
@@ -35,17 +39,19 @@ const Calendar = () => {
   }
 
   const listDays = [];
-
   const days = monthDays[value].days;
   const monthName = monthDays[value].name;
   const totalOfEmptyDays = monthDays[value].firstDay;
+  // for this system, the first day of the month will be equals to 0, since there will be be no day 0 in real life.
+  let day = date.getDate() - 1;
+
   let j = 0;
 
   for (let i = 0; i < (days + totalOfEmptyDays); i++) {
     if (i < totalOfEmptyDays) {
       listDays.push(<div key={i}></div>);
     } else {
-      if(i  === day + totalOfEmptyDays && value === month){
+      if(i === day + totalOfEmptyDays && value === month){
         listDays.push(<div className="days-item" id="presentDay" key={i}>{j + 1}</div>);
         j++;
       } else {
@@ -55,8 +61,6 @@ const Calendar = () => {
       
     }
   }
-
-  console.log(day)
 
   return (
     <div className="calendarWrapper">
